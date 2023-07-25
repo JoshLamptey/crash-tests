@@ -4,32 +4,40 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+// challenge 1
+// multiply the values of the numbers array by 6 using the map function
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+const numbers = [9,67,98,2,3,4,90]
+
+// solution
+
+const multiplied = numbers.map((num)=>{
+
+  return num*6
+
+})
+//console.log(multiplied)
+
+// challenge 2 
+// capitalize the first letter of values of the array and reverse it
+
+const names = ["alice","baiana","makeba","tempoe","vicci"]
+
+//solution
+const capitalized = names.map((name)=>{
+  return name[0].toUpperCase()+name.slice(1)
+  }).reverse();
+
+//console.log(capitalized)
+//challenge 3
+// put the values in the action variables in an html <p></p>
+
+const action = ["pokemon","sonic","lara Croft","Tom Clancy","Simon Ghost Riley"]
+
+const sorted = action.map((games)=>{
+  return `<p>${games}</p>`
+})
+console.log(sorted)
 }
 
 export default App
