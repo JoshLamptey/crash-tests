@@ -37,8 +37,13 @@ const action = ["pokemon","sonic","lara Croft","Tom Clancy","Simon Ghost Riley"]
 const sorted = action.map((games)=>{
   return `<p>${games}</p>`
 })
-console.log(sorted)
+//console.log(sorted)
 
+const  colors =[
+  "red",
+  "violet",
+  "yellow"
+] 
 
 }
 
