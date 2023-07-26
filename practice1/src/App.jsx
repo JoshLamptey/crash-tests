@@ -38,6 +38,8 @@ const sorted = action.map((games)=>{
   return `<p>${games}</p>`
 })
 console.log(sorted)
+
+
 }
 
 export default App
