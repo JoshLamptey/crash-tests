@@ -40,13 +40,13 @@ const sorted = action.map((games)=>{
 //console.log(sorted)
 
 const  colors =[
-  "red",
-  "violet",
-  "yellow",
-  "green",
-  "blue",
-  "indigo",
-  "rainbow"
+  <h3>red</h3>,
+  <h3>violet</h3>,
+  <h3>yello</h3>,
+  <h3>gree</h3>,
+  <h3>blue</h3>,
+  <h3>indigo</h3>,
+  <h3>rainbow</h3>
 ] 
 return(
   <div>
