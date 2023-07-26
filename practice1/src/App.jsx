@@ -45,6 +45,8 @@ const  colors =[
   "yellow",
   "green",
   "blue",
+  "indigo",
+  "rainbow"
 ] 
 return(
   <div>
