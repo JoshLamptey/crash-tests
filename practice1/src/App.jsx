@@ -1,9 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import Joke from './jokes'
+import jokesData from './jokesData'
 import './App.css'
 
 function App() {
+  const jokeElements = jokesData.map((joke)=>{
+    return <Joke
+    setup= {joke.setup}
+    punchline={joke.punchline}
+    />
+  })
+  return (
+    <div>
+      {jokeElements}
+    </div>
+  )
 
 }
 
