@@ -3,15 +3,21 @@ import jokesData from './jokesData'
 import './App.css'
 
 function App() {
-  const jokeElements = jokesData.map((joke)=>{
-    return <Joke
+  function handleClick(){
+    const int = Math.floor(Math.random() *jokesData.length)
+    const Punchline = jokesData[int].punchline
+    console.log(Punchline)
+  }
+ 
+  /* const jokeElements = jokesData.map((joke)=>{
+   return <Joke
     setup= {joke.setup}
     punchline={joke.punchline}
     />
-  })
+  })*/
   return (
     <div>
-      {jokeElements}
+      <button onClick={handleClick}>click me</button>
     </div>
   )
 
