@@ -4,13 +4,11 @@ import './App.css'
 import { useState } from 'react'
 
 function App() {
- const [result,func] =  useState("yes")
+ const [result,setResult] =  useState("yes")
   console.log(result)
- /* function handleClick(){
-    const int = Math.floor(Math.random() *jokesData.length)
-    const Punchline = jokesData[int].punchline
-    console.log(Punchline)
-  }*/
+  function handleClick(){
+   setResult("No")
+  }
  
   /* const jokeElements = jokesData.map((joke)=>{
    return <Joke
@@ -20,7 +18,7 @@ function App() {
   })*/
   return (
     <div>
-      <button /*onClick={handleClick}*/>{result}</button>
+      <button onClick={handleClick}>{result}</button>
     </div>
   )
 
