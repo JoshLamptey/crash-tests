@@ -4,7 +4,7 @@ import './App.css'
 import { useState } from 'react'
 
 function App() {
- const result =  useState("hello")
+ const [result,func] =  useState("yes")
   console.log(result)
  /* function handleClick(){
     const int = Math.floor(Math.random() *jokesData.length)
@@ -20,7 +20,7 @@ function App() {
   })*/
   return (
     <div>
-      <button /*onClick={handleClick}*/>{result[0]}</button>
+      <button /*onClick={handleClick}*/>{result}</button>
     </div>
   )
 
