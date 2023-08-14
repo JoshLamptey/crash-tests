@@ -4,22 +4,25 @@ import './App.css'
 import { useState } from 'react'
 
 function App() {
- const [result,setResult] =  useState("yes")
-  console.log(result)
-  function handleClick(){
-   setResult("No")
-  }
- 
-  /* const jokeElements = jokesData.map((joke)=>{
-   return <Joke
-    setup= {joke.setup}
-    punchline={joke.punchline}
-    />
-  })*/
+const [count,setCount] = useState(0)
+
+function Add(){
+  setCount(count + 1)
+  console.log(count)
+}
+
+function Minus(){
+  setCount(count - 1)
+  console.log(count)
+}
   return (
-    <div>
-      <button onClick={handleClick}>{result}</button>
-    </div>
+    <div className="counter">
+            <button onClick={Minus} className="counter--minus">-</button>
+            <div className="counter--count">
+                <h1>{count}</h1>
+            </div>
+            <button className="counter--plus" onClick={Add}>+</button>
+        </div>
   )
 
 }
