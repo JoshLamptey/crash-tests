@@ -7,13 +7,12 @@ function App() {
 const [count,setCount] = useState(0)
 
 function Add(){
-  setCount(count + 1)
-  console.log(count)
+  setCount((prevCount)=> prevCount +1)
+
 }
 
 function Minus(){
-  setCount(count - 1)
-  console.log(count)
+ setCount((prevCount)=> prevCount -1)
 }
   return (
     <div className="counter">
