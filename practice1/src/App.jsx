@@ -8,7 +8,7 @@ import Add from './adding'
 function App() {
   return (
     <div>
-      <Add/>
+      <Ternary/>
  </div> )
 }
 
