@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 export default function Ternary(){
-    const [isGoingOut,setIsGoingOUt] = useState(true)
+    const [isGoingOut,setIsGoingOUt] = useState(false)
 
     function Change(){
         setIsGoingOUt(prevState=>!prevState)
