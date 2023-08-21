@@ -4,11 +4,12 @@ import './App.css'
 import Counter from './counter'
 import Ternary from './ternary'
 import Add from './adding'
+import User from './profile'
 
 function App() {
   return (
     <div>
-      <Ternary/>
+      <User/>
  </div> )
 }
 
