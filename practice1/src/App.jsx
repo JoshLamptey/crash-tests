@@ -9,7 +9,7 @@ import User from './profile'
 function App() {
   return (
     <div>
-    <Counter/>
+    <User/>
 
  </div> )
 }
