@@ -1,5 +1,4 @@
-import StarFilled from "./starFilled.png"
-import StarEmpty from "./starEmpty.png"
+import Star from './Star'
 import userImg from './assets/images/user.png'
 import { useState } from "react"
 
@@ -15,7 +14,7 @@ export default function User(){
 
 
    
- let starIcon = contact.isFavorite? StarFilled : StarEmpty
+ 
 
 
     function toggleFavorite(){
@@ -32,11 +31,8 @@ export default function User(){
                 <article className="card">
                     <img src={userImg} className="card--image" />
                     <div className="card--info">
-                        <img 
-                            src={starIcon}
-                            className="card--favorite"
-                            onClick={toggleFavorite}
-                        />
+                        <Star isFilled ={contact.isFavorite} handleClick={toggleFavorite}/>
+
                         <h2 className="card--name">
                             {contact.firstName} {contact.lastName}
                         </h2>
