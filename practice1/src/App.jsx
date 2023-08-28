@@ -5,11 +5,12 @@ import Counter from './counter'
 import Ternary from './ternary'
 import Add from './adding'
 import User from './profile'
+import Square from "./square"
 
 function App() {
   return (
     <div>
-    <User/>
+    <Square darkMode = {false}/>
 
  </div> )
 }
