@@ -33,7 +33,7 @@ export default function Add(){
     }
 
     const things = thingsArray.map(thing=>{
-     return   <p key={thing}>{thing}</p>
+     return    <p key={thing}>{thing}</p>
 })
         
     return (
