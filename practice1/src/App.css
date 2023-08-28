@@ -109,7 +109,7 @@ button:hover {
 button:focus {
   outline: 0;
 }
-*/
+
 * {
   box-sizing: border-box;
 }
@@ -162,4 +162,18 @@ main {
   font-size: 0.75rem;
   color: gray;
   margin-block: 7px;
+}
+*/
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  border: 1px solid white;
+
+  display: inline-block;
+  margin-right: 4px;
+  border-radius: 5px;
 }
