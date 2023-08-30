@@ -6,12 +6,16 @@ import Ternary from './ternary'
 import Add from './adding'
 import User from './profile'
 import Square from "./square"
-
+import { useState } from 'react'
+import boxes from './box'
 function App() {
+  const [squares, setSquares] = useState(boxes)
+  const squareElements = squares.map((square)=>{
+    return (<Square key={square.id} on ={square.on}/>)
+  })
   return (
     <div>
-    <Square darkMode = {false}/>
-
+      {squareElements}
  </div> )
 }
 
