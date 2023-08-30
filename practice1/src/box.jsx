@@ -1,7 +1,7 @@
 export default [
     {
         id: 1,
-        on: true
+        on: 1
     },   
     
     {
