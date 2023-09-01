@@ -8,7 +8,7 @@ export default function App(props) {
     const styles = on? {
         backgroundColor:"#222222"
     }:{
-        backgroundColor:"#FFFFF0"
+        backgroundColor:"#E9DCC9"
     }
     function toggle(){
         setOn(prevOn=>!prevOn)
