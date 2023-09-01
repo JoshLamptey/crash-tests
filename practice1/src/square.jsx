@@ -14,7 +14,10 @@ export default function App(props) {
         setOn(prevOn=>!prevOn)
     }
     return (
-        <div className="box" onClick={toggle} style={styles}></div>
+        <div className="box" 
+         onClick={()=>props.Click(props.id)} 
+         style={styles}
+         ></div>
     )
 
     
