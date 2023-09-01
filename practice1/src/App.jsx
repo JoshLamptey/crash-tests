@@ -8,11 +8,27 @@ import User from './profile'
 import Square from "./square"
 import { useState } from 'react'
 import boxes from './box'
+
+
+
+
+
 function App() {
   const [squares, setSquares] = useState(boxes)
+  function clicked(id){
+    console.log(id)
+  }
+
   const squareElements = squares.map((square)=>{
-    return (<Square key={square.id} on ={square.on}/>)
+    return (<Square
+      Click={clicked} 
+      id = {square.id}
+       key={square.id} 
+       on ={square.on}
+       />)
   })
+
+
   return (
     <div>
       {squareElements}
