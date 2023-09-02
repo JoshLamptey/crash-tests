@@ -15,9 +15,26 @@ import boxes from './box'
 
 function App() {
   const [squares, setSquares] = useState(boxes)
+  
   function clicked(id){
-    console.log(id)
+    setSquares(prevSquare=>{
+      const newSquare= []
+      for(let i = 0; i<prevSquare.length;i++){
+      const currentSquare = prevSquare[i]
+      if(currentSquare.id===id){
+        const updatedSquare = {
+          ...currentSquare,
+          on: !currentSquare.on
+        }
+        newSquare.push(updatedSquare)
+      }else{
+        newSquare.push(currentSquare)
+      }
+      }
+      return newSquare
+    })
   }
+
 
   const squareElements = squares.map((square)=>{
     return (<Square
