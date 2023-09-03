@@ -1,9 +1,17 @@
+import { useState } from "react"
+
 export default function Joke(props) {
+    const [isShow,setIsShow] = useState(false)
+    
+    function toggleShow(){
+        setIsShow(prevState=>!prevState)
+    }
     return (
         <div>
-            <button>click me</button>
+        
             {props.setup && <h3>Setup: {props.setup}</h3>}
-            <p>Punchline: {props.punchline}</p>
+            {isShow &&<p>Punchline: {props.punchline}</p>}
+            <button onClick={toggleShow}>Punch Me</button>
             <hr />
         </div>
     )
