@@ -14,6 +14,7 @@ import boxes from './box'
 
 
 function App() {
+  /*
   const [squares, setSquares] = useState(boxes)
   
   function toggle(id){
@@ -33,12 +34,21 @@ function App() {
        on ={square.on}
        />)
   })
+*/
 
-
+const jokeElements = jokesData.map(joke=>{
+  return <Joke
+  key = {joke.id}
+  setup = {joke.setup}
+  punchline= {joke.punchline}
+  />
+})
   return (
     <div>
-      {squareElements}
+      {jokeElements}
  </div> )
+ 
+
 }
 
 
