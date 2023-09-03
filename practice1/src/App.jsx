@@ -16,29 +16,18 @@ import boxes from './box'
 function App() {
   const [squares, setSquares] = useState(boxes)
   
-  function clicked(id){
-    setSquares(prevSquare=>{
-      const newSquare= []
-      for(let i = 0; i<prevSquare.length;i++){
-      const currentSquare = prevSquare[i]
-      if(currentSquare.id===id){
-        const updatedSquare = {
-          ...currentSquare,
-          on: !currentSquare.on
-        }
-        newSquare.push(updatedSquare)
-      }else{
-        newSquare.push(currentSquare)
-      }
-      }
-      return newSquare
+  function toggle(id){
+    setSquares(prevSquares=>{
+      return prevSquares.map((square)=>{
+        return square.id=== id ? {...square,on: !square.on}:square
+      })
     })
   }
 
 
   const squareElements = squares.map((square)=>{
     return (<Square
-      Click={clicked} 
+      Click={toggle} 
       id = {square.id}
        key={square.id} 
        on ={square.on}
@@ -51,5 +40,6 @@ function App() {
       {squareElements}
  </div> )
 }
+
 
 export default App
