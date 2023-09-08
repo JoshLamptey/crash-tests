@@ -8,7 +8,7 @@ import User from './profile'
 import Square from "./square"
 import { useState } from 'react'
 import boxes from './box'
-
+import Form from './form'
 
 
 
@@ -34,7 +34,7 @@ function App() {
        on ={square.on}
        />)
   })
-*/
+
 
 const jokeElements = jokesData.map(joke=>{
   return <Joke
@@ -47,7 +47,11 @@ const jokeElements = jokesData.map(joke=>{
     <div>
       {jokeElements}
  </div> )
- 
+ */
+return(
+  <Form/>
+)
+
 
 }
 
