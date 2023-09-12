@@ -6,6 +6,7 @@ export default function Form(){
       firstName:"",
       lastName:"",
       Email:"",
+      textarea:""
     }
     )
 
@@ -42,7 +43,14 @@ export default function Form(){
              onChange={handleChange}
              name="Email"
              value={formData.Email}
-
+               />
+               <textarea 
+               name="textarea" 
+               id="" 
+               cols="30"
+               rows="10" 
+               value={formData.textarea}
+               onChange={handleChange}
                />
         </form>
     )
