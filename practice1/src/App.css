@@ -1,4 +1,4 @@
-
+/*
 * {
   box-sizing: border-box;
 }
@@ -106,7 +106,7 @@ textarea {
   display: block;
   
 }
-/*
+
 
 
 button {
@@ -183,7 +183,7 @@ main {
   color: gray;
   margin-block: 7px;
 }
-/*
+
 * {
   box-sizing: border-box;
 }
@@ -197,3 +197,61 @@ main {
   margin-right: 4px;
   border-radius: 5px;
 }*/
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+  box-sizing: border-box;
+  color: gray;
+}
+body{
+  margin: 0;
+  background-color: #639;
+  height: 100vh;
+  font-family:"inter",sans-serif ;
+}
+.form-container{
+  height: 100vh;
+  margin-left: 8rem;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form{
+  background-color: white;
+  padding: 50px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+  box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.75);
+}
+.form--input{
+  width: 100%;
+  margin-bottom: 20px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid gray;
+  padding: 5px;
+  font-family: "Inter",sans-serif;
+}
+.form--submit{
+  width: 50%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: #639;
+  cursor: pointer;
+}
+.form--marketing{
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.form--marketing>input{
+  margin-right: 10px;
+}
