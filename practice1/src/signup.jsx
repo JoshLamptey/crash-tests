@@ -31,9 +31,9 @@ export default function signUp(){
 
         function Validate(){
             if(data.password===data.confirmPassword){
-                console.log("Successfully signed up ")
+                console.log("Yayyyy you fuggin mug")
             }else{
-                console.log('Check your Password you bloody knob')
+                console.log('i am too tired to continue bloody existing')
             }
         }
 
