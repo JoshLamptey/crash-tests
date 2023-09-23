@@ -10,6 +10,7 @@ import { useState } from 'react'
 import boxes from './box'
 import Form from './form'
 import SignUp from './signup'
+import StarWars from './api'
 
 
 
@@ -50,7 +51,7 @@ const jokeElements = jokesData.map(joke=>{
  </div> )
  */
 return(
-  <SignUp/>
+  <StarWars/>
 )
 
 
