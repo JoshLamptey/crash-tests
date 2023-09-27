@@ -3,7 +3,10 @@ import { useEffect, useState } from "react";
 export default function starWars(){
     const [starWarsData, setStarWarsData]= useState({})
     const [count,setCount] =useState(0)
+   
     console.log("component rendered")
+
+
    useEffect(function(){
   fetch("https://swapi.dev/api/people/1")
   .then(res=>res.json())
