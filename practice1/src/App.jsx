@@ -11,6 +11,7 @@ import boxes from './box'
 import Form from './form'
 import SignUp from './signup'
 import StarWars from './starwars'
+import Window from "./windowShow"
 
 
 
@@ -51,7 +52,7 @@ const jokeElements = jokesData.map(joke=>{
  </div> )
  */
 return(
-  <StarWars/>
+  <Window/>
 )
 
 
